@@ -1,6 +1,6 @@
 ALGORITHM checkpoints
 VAR
-    nv,l:INTEGER=0
+    nv,c:INTEGER=0
     st:STRING
     i:INTEGER=0
     nw:INTEGER=1
@@ -8,7 +8,7 @@ BEGIN
     Read (st)
     WHILE (st(i)<>'.') DO
         i:=i+1
-        l++
+        c++
         IF (st[i]=' ']) THEN
             nw:=nw+1
         END_IF
@@ -16,5 +16,5 @@ BEGIN
             nv:=nv+1
         END_IF
     END_WHILE
-    Write ("this is the number of  : words in this sentence , vowels & caracters :",nw,nv,l)
+    Write ("the number of  : words , vowels & caracters :",nw,nv,c)
 END
